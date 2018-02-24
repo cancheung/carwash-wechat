@@ -1,0 +1,88 @@
+// 字体颜色
+.color-yellow {
+  color: @yellow !important;
+}
+
+.color-blue {
+  color: @blue !important;
+}
+
+// 背景颜色
+.bg-yellow {
+  background-color: @yellow !important;
+}
+
+.bg-blue {
+  background-color: @blue !important;
+}
+
+// 文本超出部分省略号
+.ellipsis {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+// 清除浮动
+.clearfix {
+  &::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+/*浮动*/
+.left {
+  float: left !important;
+}
+
+.right {
+  float: right !important;
+}
+
+// svg图标
+.svg-icon {
+  vertical-align: middle;
+  transform: translateY(-1px);
+}
+
+//通用圆角按钮
+.car-btn {
+  color: #fff !important;
+  font-size: 15px !important;
+  line-height: 45px !important;
+  &.weui-btn:after {
+    border: 0 !important;
+  }
+
+  svg {
+    margin-right: 10px;
+  }
+
+  &--radius {
+    border-radius: 22px !important;
+  }
+
+  &__blue {
+    background-color: @blue !important;
+    &:not(.weui-btn_disabled):active {
+      background-color: @blue !important;
+      color: #fff !important;
+    }
+  }
+
+  &__yellow {
+    background-color: @yellow !important;
+    &:not(.weui-btn_disabled):active {
+      background-color: @yellow !important;
+      color: #fff !important;
+    }
+  }
+}
+
+// toast字体修改
+.weui-toast__content{
+  font-size: 13px !important;
+}
